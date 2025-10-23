@@ -8,71 +8,90 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Our E-Commerce Store</h1>
+        <h1>Welcome to Sri Sai Electrical Store</h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#products">Products</a></li>
                 <li><a href="#cart">Cart</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#signin">Sign In</a></li>
+                <li><a href="#create">Create Account</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="home">
-            <h2>Home</h2>
-            <p>Discover amazing products at great prices!</p>
+            <div class="hero">
+                <h2>Welcome to Sri Sai Electrical Store</h2>
+                <p>Your one-stop shop for all electrical needs. Discover high-quality products at unbeatable prices!</p>
+                <button id="shop-now">Shop Now</button>
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <h3>Quality Products</h3>
+                    <p>We offer only the best electrical appliances from trusted brands.</p>
+                </div>
+                <div class="feature">
+                    <h3>Competitive Prices</h3>
+                    <p>Get the best deals on switches, bulbs, fans, and air conditioners.</p>
+                </div>
+                <div class="feature">
+                    <h3>Fast Delivery</h3>
+                    <p>Quick and reliable delivery right to your doorstep.</p>
+                </div>
+            </div>
+            <blockquote>"The best way to predict the future is to create it." </blockquote>
         </section>
         <section id="products">
             <h2>Products</h2>
             <div class="product-list">
                 <div class="product">
-                    <img src="https://via.placeholder.com/150" alt="Product 1">
-                    <h3>Product 1</h3>
-                    <p>₹10.00</p>
-                    <h1>hi man</h1>
+                    <img src="C:\Users\jagje\Downloads\Modern Electric Switch Board Designs for Home in India.jpg" alt="Product 1">
+                    <h3>Modern Electric Switch Board Designs for Home in India</h3>
+                    <p>₹599.00</p>
                     <button>Add to Cart</button>
                 </div>
                 <div class="product">
-                    <img src="https://via.placeholder.com/150" alt="Product 2">
-                    <h3>Product 2</h3>
-                    <p>₹20.00</p>
+                    <img src="C:\Users\jagje\Downloads\download (3).jpg">
+                    <h3>White Switch Board Designs for Home in India </h3>
+                    <p>₹299.00</p>
                     <button>Add to Cart</button>
                 </div>
                 <div class="product">
-                    <img src="https://via.placeholder.com/150" alt="Product 3">
-                    <h3>Product 3</h3>
-                    <p>₹30.00</p>
+                    <img src="C:\Users\jagje\Downloads\Foco Led Luz Fría E27.jpg">
+                    <h3>Philips 40W Bulb</h3>
+                    <p>₹299.00</p>
                     <button>Add to Cart</button>
                 </div>
                 <div class="product">
-                    <img src="https://via.placeholder.com/150" alt="Product 4">
-                    <h3>Product 4</h3>
-                    <p>₹15.00</p>
+                    <img src="C:\Users\jagje\Downloads\Amazon_in_ Best Smart LED Bulb.jpg" alt="Product 4">
+                    <h3>Crompto 20W Led Bulb</h3>
+                    <p>₹349.00</p>
                     <button>Add to Cart</button>
                 </div>
                 <div class="product">
-                    <img src="https://via.placeholder.com/150" alt="Product 5">
-                    <h3>Product 5</h3>
-                    <p>₹25.00</p>
+                    <img src="C:\Users\jagje\Desktop\Screenshot 2025-10-23 154812.png">
+                    <h3>atomberg Renesa Halo Smart Alexa Enabled 1200mm BLDC Ceiling Fan with Remote</h3>
+                    <p>₹3,999.00</p>
                     <button>Add to Cart</button>
                 </div>
                 <div class="product">
-                    <img src="https://via.placeholder.com/150" alt="Product 6">
-                    <h3>Product 6</h3>
-                    <p>₹35.00</p>
+                    <img src="C:\Users\jagje\Desktop\Screenshot 2025-10-23 160718.png"alt="Product 6">
+                    <h3>Orient Electric I Tome Pro 1400 mm BLDC Ceiling Fan with Remote </h3>
+                    <p>₹3,599.00</p>
                     <button>Add to Cart</button>
                 </div>
                 <div class="product">
-                    <img src="https://via.placeholder.com/150" alt="Product 7">
-                    <h3>Product 7</h3>
-                    <p>₹40.00</p>
+                    <img src="C:\Users\jagje\OneDrive\Pictures\Screenshots\Screenshot 2025-10-23 162246.png" alt="Product 7">
+                    <h3>Voltas 241 CZMM 2 TON Slimline AC, R-32 Portable AC</h3>
+                    <p>₹69,999.00</p>
                     <button>Add to Cart</button>
                 </div>
                 <div class="product">
-                    <img src="https://via.placeholder.com/150" alt="Product 8">
-                    <h3>Product 8</h3>
-                    <p>₹50.00</p>
+                    <img src="C:\Users\jagje\Desktop\Screenshot 2025-10-23 161359.png" alt="Product 8">
+                    <h3>Voltas 1.5 ton 5 Star, Inverter Split AC</h3>
+                    <p>₹36,999.00</p>
                     <button>Add to Cart</button>
                 </div>
             </div>
@@ -80,6 +99,7 @@
         <section id="cart">
             <h2>Shopping Cart</h2>
             <p>Your cart is empty.</p>
+            <button id="continue-shopping">Continue Shopping</button>
         </section>
         <section id="contact">
             <h2>Contact Us</h2>
@@ -93,9 +113,33 @@
                 <button type="submit">Send</button>
             </form>
         </section>
+        <section id="signin">
+            <h2>Sign In</h2>
+            <form id="signin-form">
+                <label for="signin-email">Email:</label>
+                <input type="email" id="signin-email" name="email" required>
+                <label for="signin-password">Password:</label>
+                <input type="password" id="signin-password" name="password" required>
+                <button type="submit">Sign In</button>
+            </form>
+        </section>
+        <section id="create">
+            <h2>Create Account</h2>
+            <form id="create-form">
+                <label for="create-name">Name:</label>
+                <input type="text" id="create-name" name="name" required>
+                <label for="create-email">Email:</label>
+                <input type="email" id="create-email" name="email" required>
+                <label for="create-password">Password:</label>
+                <input type="password" id="create-password" name="password" required>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <button type="submit">Create Account</button>
+            </form>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2023 E-Commerce Store. All rights reserved.</p>
+        <p>&copy; 2025 E-Commerce Store. All rights reserved. Developed by Jagjeevan.</p>
     </footer>
     <script src="script.js"></script>
 </body>
